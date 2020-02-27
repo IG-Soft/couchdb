@@ -1,4 +1,4 @@
-module github.com/IG-Soft/couchdb/v3
+module github.com/IG-Soft/couchdb
 
 go 1.13
 
