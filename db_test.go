@@ -48,6 +48,12 @@ func TestQuery(t *testing.T) {
 	testy.Error(t, "Get http://example.com/testdb/_design/ddoc/_view/view: test error", err)
 }
 
+func TestUpdate(t *testing.T) {
+	db := newTestDB(nil, errors.New("test error"))
+	_, err := db.Update(context.Background(), "ddoc", "update", nil)
+	testy.Error(t, "Get http://example.com/testdb/_design/ddoc/_update/update: test error", err)
+}
+
 type Attachment struct {
 	Filename    string
 	ContentType string

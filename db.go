@@ -119,6 +119,11 @@ func (d *db) Query(ctx context.Context, ddoc, view string, opts map[string]inter
 	return d.rowsQuery(ctx, fmt.Sprintf("_design/%s/_view/%s", chttp.EncodeDocID(ddoc), chttp.EncodeDocID(view)), opts)
 }
 
+// Update posts to an update function.
+func (d *db) Update(ctx context.Context, ddoc, update string, opts map[string]interface{}) (driver.Rows, error) {
+	return d.rowsQuery(ctx, fmt.Sprintf("_design/%s/_update/%s", chttp.EncodeDocID(ddoc), chttp.EncodeDocID(update)), opts)
+}
+
 // Get fetches the requested document.
 func (d *db) Get(ctx context.Context, docID string, options map[string]interface{}) (*driver.Document, error) {
 	resp, rev, err := d.get(ctx, http.MethodGet, docID, options)
