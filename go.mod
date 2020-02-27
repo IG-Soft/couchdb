@@ -3,7 +3,7 @@ module github.com/IG-Soft/couchdb
 go 1.13
 
 require (
-	github.com/IG-Soft/kivik/v3 v3.0.0
+    github.com/IG-Soft/kivik v1.7.3-0.20200227152643-db9eeeeaab00
 	github.com/go-kivik/kiviktest/v3 v3.0.0
 	github.com/gopherjs/gopherjs v0.0.0-20200209144316-f9cef593def5
 	github.com/pkg/errors v0.9.1
