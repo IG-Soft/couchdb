@@ -8,7 +8,7 @@ URL, likely with login credentials:
 
     import (
         kivik "github.com/IG-Soft/kivik/v3"
-        _ "github.com/go-kivik/couchdb/v3" // The CouchDB driver
+        _ "github.com/IG-Soft/couchdb/v3" // The CouchDB driver
     )
 
     client, err := kivik.New("couch", "http://username:password@127.0.0.1:5984/")

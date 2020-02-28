@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/go-kivik/couchdb/v3/chttp"
+	"github.com/IG-Soft/couchdb/v3/chttp"
 	"github.com/IG-Soft/kivik/v3/driver"
 )
 

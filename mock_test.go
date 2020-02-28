@@ -12,7 +12,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/go-kivik/couchdb/v3/chttp"
+	"github.com/IG-Soft/couchdb/v3/chttp"
 	"github.com/IG-Soft/kiviktest/v3/kt"
 )
 

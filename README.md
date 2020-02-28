@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/go-kivik/couchdb.svg?branch=master)](https://travis-ci.org/go-kivik/couchdb) [![Codecov](https://img.shields.io/codecov/c/github/go-kivik/couchdb.svg?style=flat)](https://codecov.io/gh/go-kivik/couchdb) [![GoDoc](https://godoc.org/github.com/go-kivik/couchdb?status.svg)](http://godoc.org/github.com/go-kivik/couchdb)
+[![Build Status](https://travis-ci.org/go-kivik/couchdb.svg?branch=master)](https://travis-ci.org/go-kivik/couchdb) [![Codecov](https://img.shields.io/codecov/c/github/go-kivik/couchdb.svg?style=flat)](https://codecov.io/gh/go-kivik/couchdb) [![GoDoc](https://godoc.org/github.com/IG-Soft/couchdb?status.svg)](http://godoc.org/github.com/IG-Soft/couchdb)
 
 # Kivik CouchDB
 
@@ -20,7 +20,7 @@ import (
     "context"
 
     kivik "github.com/IG-Soft/kivik/v3"
-    _ "github.com/go-kivik/couchdb/v3" // The CouchDB driver
+    _ "github.com/IG-Soft/couchdb/v3" // The CouchDB driver
 )
 
 func main() {

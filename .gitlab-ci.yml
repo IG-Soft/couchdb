@@ -2,7 +2,7 @@ stages:
     - test
 
 variables:
-    SRCDIR: /go/src/github.com/go-kivik/couchdb
+    SRCDIR: /go/src/github.com/IG-Soft/couchdb
     GO111MODULE: "on"
 
 .test: &test_template

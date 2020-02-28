@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/go-kivik/couchdb/v3/chttp"
+	"github.com/IG-Soft/couchdb/v3/chttp"
 	kivik "github.com/IG-Soft/kivik/v3"
 	"github.com/IG-Soft/kivik/v3/driver"
 )
