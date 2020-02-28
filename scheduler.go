@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/go-kivik/couchdb/v3/chttp"
-	"github.com/go-kivik/kivik/v3/driver"
+	"github.com/IG-Soft/kivik/v3/driver"
 )
 
 type schedulerDoc struct {

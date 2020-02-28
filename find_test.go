@@ -12,7 +12,7 @@ import (
 
 	"gitlab.com/flimzy/testy"
 
-	"github.com/go-kivik/kivik/v3/driver"
+	"github.com/IG-Soft/kivik/v3/driver"
 )
 
 func TestExplain(t *testing.T) {

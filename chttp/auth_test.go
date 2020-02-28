@@ -12,7 +12,7 @@ import (
 	"gitlab.com/flimzy/testy"
 	"golang.org/x/net/publicsuffix"
 
-	kivik "github.com/go-kivik/kivik/v3"
+	kivik "github.com/IG-Soft/kivik/v3"
 )
 
 type mockRT struct {

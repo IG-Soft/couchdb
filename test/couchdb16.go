@@ -3,8 +3,8 @@ package test
 import (
 	"net/http"
 
-	kiviktest "github.com/go-kivik/kiviktest/v3"
-	"github.com/go-kivik/kiviktest/v3/kt"
+	kiviktest "github.com/IG-Soft/kiviktest/v3"
+	"github.com/IG-Soft/kiviktest/v3/kt"
 )
 
 func registerSuiteCouch16() {

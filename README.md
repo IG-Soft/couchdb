@@ -2,15 +2,15 @@
 
 # Kivik CouchDB
 
-CouchDB driver for [Kivik](https://github.com/go-kivik/kivik).
+CouchDB driver for [Kivik](https://github.com/IG-Soft/kivik).
 
 ## Usage
 
 This package provides an implementation of the
-[`github.com/go-kivik/kivik/v3/driver`](http://godoc.org/github.com/go-kivik/kivik/driver)
+[`github.com/IG-Soft/kivik/v3/driver`](http://godoc.org/github.com/IG-Soft/kivik/driver)
 interface. You must import the driver and can then use the full
-[`Kivik`](http://godoc.org/github.com/go-kivik/kivik) API. Please consult the
-[Kivik wiki](https://github.com/go-kivik/kivik/wiki) for complete documentation
+[`Kivik`](http://godoc.org/github.com/IG-Soft/kivik) API. Please consult the
+[Kivik wiki](https://github.com/IG-Soft/kivik/wiki) for complete documentation
 and coding examples.
 
 ```go
@@ -19,7 +19,7 @@ package main
 import (
     "context"
 
-    kivik "github.com/go-kivik/kivik/v3"
+    kivik "github.com/IG-Soft/kivik/v3"
     _ "github.com/go-kivik/couchdb/v3" // The CouchDB driver
 )
 

@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/go-kivik/couchdb/v3/chttp"
-	kivik "github.com/go-kivik/kivik/v3"
-	"github.com/go-kivik/kivik/v3/driver"
+	kivik "github.com/IG-Soft/kivik/v3"
+	"github.com/IG-Soft/kivik/v3/driver"
 )
 
 // Couch represents the parent driver instance.

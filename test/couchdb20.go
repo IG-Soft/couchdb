@@ -3,9 +3,9 @@ package test
 import (
 	"net/http"
 
-	kivik "github.com/go-kivik/kivik/v3"
-	kiviktest "github.com/go-kivik/kiviktest/v3"
-	"github.com/go-kivik/kiviktest/v3/kt"
+	kivik "github.com/IG-Soft/kivik/v3"
+	kiviktest "github.com/IG-Soft/kiviktest/v3"
+	"github.com/IG-Soft/kiviktest/v3/kt"
 )
 
 func registerSuiteCouch20() {

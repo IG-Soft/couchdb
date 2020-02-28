@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	kivik "github.com/go-kivik/kivik/v3"
-	"github.com/go-kivik/kivik/v3/driver"
+	kivik "github.com/IG-Soft/kivik/v3"
+	"github.com/IG-Soft/kivik/v3/driver"
 )
 
 type rowsMeta struct {

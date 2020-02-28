@@ -7,7 +7,7 @@ Use the `couch` driver name when using this driver. The DSN should be a full
 URL, likely with login credentials:
 
     import (
-        kivik "github.com/go-kivik/kivik/v3"
+        kivik "github.com/IG-Soft/kivik/v3"
         _ "github.com/go-kivik/couchdb/v3" // The CouchDB driver
     )
 

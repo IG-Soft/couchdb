@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"sync"
 
-	kivik "github.com/go-kivik/kivik/v3"
+	kivik "github.com/IG-Soft/kivik/v3"
 )
 
 type parser interface {

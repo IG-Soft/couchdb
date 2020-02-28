@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	_ "github.com/go-kivik/couchdb/v3"
-	kiviktest "github.com/go-kivik/kiviktest/v3"
+	kiviktest "github.com/IG-Soft/kiviktest/v3"
 )
 
 func init() {

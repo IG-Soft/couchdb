@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	kivik "github.com/go-kivik/kivik/v3"
+	kivik "github.com/IG-Soft/kivik/v3"
 )
 
 // CookieAuth provides CouchDB Cookie auth services as described at
