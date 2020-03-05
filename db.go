@@ -120,8 +120,36 @@ func (d *db) Query(ctx context.Context, ddoc, view string, opts map[string]inter
 }
 
 // Update posts to an update function.
-func (d *db) Update(ctx context.Context, ddoc, update string, opts map[string]interface{}) (driver.Rows, error) {
-	return d.rowsQuery(ctx, fmt.Sprintf("_design/%s/_update/%s", chttp.EncodeDocID(ddoc), chttp.EncodeDocID(update)), opts)
+func (d *db) Update(ctx context.Context, ddoc, updateFunc, docID, update string, result interface{}, opts map[string]interface{}) (interface{}, error) {
+	return d.updateDoc(ctx, fmt.Sprintf("_design/%s/_update/%s/%s", chttp.EncodeDocID(ddoc), chttp.EncodeDocID(updateFunc), chttp.EncodeDocID(docID)), update, result, opts)
+}
+
+func (d *db) updateDoc(ctx context.Context, ddoc string, update interface{}, result interface{}, options map[string]interface{}) (interface{}, error) {
+
+	fullCommit, err := fullCommit(options)
+	if err != nil {
+		return nil, err
+	}
+
+	path := d.path(ddoc)
+
+	var params url.Values
+	if len(options) > 0 {
+		params, err = optionsToParams(options)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	//TODO add the body
+	opts := &chttp.Options{
+		Body:       chttp.EncodeBody(update),
+		FullCommit: fullCommit,
+		Query:      params,
+	}
+
+	_, err = d.Client.DoJSON(ctx, http.MethodPost, path, opts, &result)
+	return result, err
 }
 
 // Get fetches the requested document.

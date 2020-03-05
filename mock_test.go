@@ -13,7 +13,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/IG-Soft/couchdb/v3/chttp"
-	"github.com/IG-Soft/kiviktest/v3/kt"
+	"github.com/kivik-go/kiviktest/v3/kt"
 )
 
 type customTransport func(*http.Request) (*http.Response, error)
